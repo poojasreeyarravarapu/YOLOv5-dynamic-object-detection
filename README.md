@@ -111,37 +111,39 @@ Keep videos small for faster processing.
 License:
 This project uses YOLOv5 by Ultralytics under the GNU General Public License v3.0.
 
-
+```markdown
 Finally this is how it works!
-   ┌───────────────────┐
-   │   Input File       │
-   │ (Video / Image)    │
-   └─────────┬─────────┘
-             │
-             ▼
-   ┌───────────────────┐
-   │ Frame Extraction   │
-   │ (video_to_yolo.py) │
-   └─────────┬─────────┘
-             │
-             ▼
-   ┌───────────────────┐
-   │ Dataset Cleanup    │
-   │ (cleanup.py)       │
-   └─────────┬─────────┘
-             │
-             ▼
-   ┌───────────────────┐
-   │ YOLOv5 Detection   │
-   │ (dynamic_object_   │
-   │ detection.py)      │
-   └─────────┬─────────┘
-             │
-             ▼
-   ┌───────────────────┐
-   │ Output Video/      │
-   │ Images (runs/)     │
-   └───────────────────┘
+┌───────────────────┐
+│ Input File │
+│ (Video / Image) │
+└─────────┬─────────┘
+│
+▼
+┌───────────────────┐
+│ Frame Extraction │
+│ (video_to_yolo.py) │
+└─────────┬─────────┘
+│
+▼
+┌───────────────────┐
+│ Dataset Cleanup │
+│ (cleanup.py) │
+└─────────┬─────────┘
+│
+▼
+┌───────────────────┐
+│ YOLOv5 Detection │
+│ (dynamic_object_ │
+│ detection.py) │
+└─────────┬─────────┘
+│
+▼
+┌───────────────────┐
+│ Output Video/ │
+│ Images (runs/) │
+└───────────────────┘
+
+```
 
 This project demonstrates a practical and efficient pipeline for dynamic object detection using YOLOv5 and OpenCV.
 By combining video frame extraction, automated dataset cleanup, and YOLOv5 detection, it ensures high‑quality inputs and accurate detection results for both images and videos.
@@ -149,3 +151,4 @@ It can be extended to real‑time detection, multi‑camera setups, or integrate
 
 Author
 Pooja Sree Yarravarapu
+
