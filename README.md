@@ -149,6 +149,9 @@ This project demonstrates a practical and efficient pipeline for dynamic object 
 By combining video frame extraction, automated dataset cleanup, and YOLOv5 detection, it ensures high‑quality inputs and accurate detection results for both images and videos.
 It can be extended to real‑time detection, multi‑camera setups, or integrated into larger computer vision systems.
 
+
 Author
+
 Pooja Sree Yarravarapu
+
 
