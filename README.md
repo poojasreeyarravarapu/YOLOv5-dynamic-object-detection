@@ -2,6 +2,12 @@
 
 # Dynamic Object Detection using YOLOv5 & OpenCV
 
+**“What is YOLOv5?”**
+YOLO stands for You Only Look Once. It’s a real‑time object detection algorithm that detects objects in an image or video in a single forward pass through a neural network. YOLOv5 is the PyTorch‑based implementation by Ultralytics. It’s fast and accurate for multiple object categories.
+
+**“How does it work?”**
+It splits the image into a grid, predicts bounding boxes and class probabilities for each grid cell, and then applies Non‑Max Suppression to remove overlapping boxes and keep the most confident ones.
+
 This project implements a YOLOv5-based robust object detection system for videos.
 
 ## Features
@@ -68,6 +74,7 @@ python detect.py --weights yolov5s.pt --source video.mp4 --view-img
 
 5. For the Automated Data Cleanup:
   For Images:
+  cleanup.py - Uses image hashing and blurriness detection to remove low‑quality or duplicate frames.
   ```bash
   python cleanup.py
   ```
@@ -78,6 +85,7 @@ python detect.py --weights yolov5s.pt --source video.mp4 --view-img
   Basically the file path of the data\images that need to be cleaned.
 
   For Videos:
+  video_to_yolo.py - Uses OpenCV to read video frames and save them as images.
   And the cleanup script work directly on frames extracted from your video
   Basically to extract frames
   ```bash
@@ -88,6 +96,7 @@ python detect.py --weights yolov5s.pt --source video.mp4 --view-img
 
 
 6. And for combining all steps into one clean script to run it
+   dynamic_object_detection.py - Calls YOLOv5 detection with the provided video/image path, processes the results, and saves them.
   ```bash
   python dynamic_object_detection.py
   ```
@@ -153,5 +162,6 @@ It can be extended to real‑time detection, multi‑camera setups, or integrate
 Author
 
 Pooja Sree Yarravarapu
+
 
 
